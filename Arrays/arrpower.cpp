@@ -1,16 +1,20 @@
 #include<iostream>
 using namespace std;
-int power(int arr[], int size){
-    for (int i=0;i<size;i++){
-        if(arr[i]/2==0){
-            cout<<"element is power of 2"<<endl;
-        }
-        else{
-            cout<<"element is not power of 2"<<endl;
-
+int countPowersOfTwo(int arr[], int size) {
+    int count = 0;
+    for (int i = 0; i < size; i++) {
+        int n = arr[i];
+        // Bitwise check: a power of 2 has only one bit set
+        if (n > 0 && (n & (n - 1)) == 0) {
+            cout << n << " is power of 2" << endl;
+            count++;
+        } else {
+            cout << n << " is not power of 2" << endl;
         }
     }
+    return count; // Now it returns the actual count
 }
+
 int main(){
     int arr[3]={1,2,3};
   int ans=  power(arr,3);
