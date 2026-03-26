@@ -17,7 +17,7 @@ int countPowersOfTwo(int arr[], int size) {
 
 int main(){
     int arr[3]={1,2,3};
-  int ans=  power(arr,3);
+  int ans=  countPowersOfTwo(arr,3);
     cout<<"Powers of 2 in array are "<<ans<<endl;
     return 0;
 
