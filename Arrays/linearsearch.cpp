@@ -23,5 +23,5 @@ int main(){
     else{
         cout<<"Element is not found in array"<<endl;
     }
-    return 0;
+   
 }
