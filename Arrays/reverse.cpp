@@ -21,13 +21,13 @@ void printarr2(int arr[] , int n) {
     }
     cout<<endl;
 }
-int main(){
+int main() {
     int arr[5]={1,2,3,4,5};
     cout<<"Original array is "<<endl;
     array1(arr,5);
     reverse(arr,5);
     cout<<"Reversed array is "<<endl;
     printarr2(arr,5);
-}
+
 return 0;
 }
