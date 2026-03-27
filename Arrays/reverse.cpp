@@ -13,9 +13,9 @@ void reverse(int arr[] , int n){
         swap(arr[start],arr[end]);
         start++;
         end-- ;
-     
+    }
 }
-void printarr2(int arr[] , int n){
+void printarr2(int arr[] , int n) {
     for (int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
