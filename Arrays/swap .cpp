@@ -1,21 +1,29 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int arr[6]={1,3,2,7,11,8};
-    cout<<"Original array is "<<endl;
-    for (int i=0;i<6;i++){
+void printarr(int arr[], int size){
+    for (int i=0;i<size;i++){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
-    for (int i=0;i<5;i++){
+}
+//We are swapping alternate elements of the array
+void swap(int arr[] , int size){
+    for(int i=0;i<size;i+=2){
         swap(arr[i],arr[i+1]);
-
     }
-    cout<<"Swapped array is "<<endl;
-    for (int i=0;i<6;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-return 0;
-
+}
+int main(){
+    int even[8] = {1,2,3,4,5,6,7,8};
+    int odd[5] = {1,2,3,4,5};
+    cout<<"Before swapping alternate elements of the array: "<<endl;
+    printarr(even,8);
+    cout<<"After swapping alternate elements of the array: "<<endl;
+    swap(even,8);
+    printarr(even,8);
+    cout<<"Before swapping alternate elements of the array: "<<endl;
+    printarr(odd,5);
+    cout<<"After swapping alternate elements of the array: "<<endl;
+    swap(odd,5);
+    printarr(odd,5);
+    return 0;
 }
