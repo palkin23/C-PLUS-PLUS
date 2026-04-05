@@ -12,7 +12,7 @@ int  binarysearch(int arr[],int size , int key){
             start=mid+1; // moving to the right side
         }
         else{
-            end=mid-1: // moving to the left side
+            end=mid-1;// moving to the left side
         }
         mid=start+(end-start)/2;
 
