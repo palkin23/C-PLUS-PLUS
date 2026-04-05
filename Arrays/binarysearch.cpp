@@ -8,7 +8,7 @@ bool binarysearch(int arr[],int size , int key){
         if(aarr[mid]==key){
             return mid;
         }
-        if(key>arr[mid]{
+        if(key>arr[mid]){
             start=mid+1; // moving to the right side
         }
         else{
