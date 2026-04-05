@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-bool binarysearch(int arr[],int size , int key){
+int  binarysearch(int arr[],int size , int key){
     int start=0;
     int end= size-1;
     int mid=start+(end-start)/2;
