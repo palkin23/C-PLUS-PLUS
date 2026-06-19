@@ -15,5 +15,6 @@ int *rev(int arr[],int arr2[],int n,int i){
         for(int i=0;i<n;i++){
             cout<<arr2[i]<<" ";
         }
+        return 0;
     }
         
