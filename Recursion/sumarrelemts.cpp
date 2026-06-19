@@ -1,13 +1,10 @@
 #include<iostream>
 using namespace std;
 int sumarray(int arr[],int n){
-for(int i=0;i<n;i++){
-    if(i==n-1){
-        return arr[i];
-    }
-    else{
-        return arr[i]+sumarray(arr,n-1);
-    }
+if(n==0){
+    return 0;
+}else{
+    return arr[n-1]+sumarray(arr,n-1);
 }
 }
 int main(){
