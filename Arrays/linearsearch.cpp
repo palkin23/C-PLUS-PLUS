@@ -26,3 +26,19 @@ int main(){
     }
    
 }
+/*
+#include <stdio.h>
+
+int main() {
+  int arr[5]={1,4,5,4,7};
+  int n=4;
+  for(int i=0;i<5;i++){
+      if(arr[i]==n){
+          printf("%d is found at %d position\n",n,i+1);
+       //break;
+      }
+  }
+
+    return 0;
+}
+*/
