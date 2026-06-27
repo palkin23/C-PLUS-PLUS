@@ -20,4 +20,8 @@ int main(){
     else if (percentage>=33){
         cout<<"Third Division"<<endl;
     }
+    else{
+        cout<<"Fail"<<endl;
+    }
+    return 0;
 }
