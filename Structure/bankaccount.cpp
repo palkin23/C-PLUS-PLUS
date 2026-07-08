@@ -36,7 +36,7 @@ int withdraw(Bank &b)
 
 int main()
 {
-    Bank b1 = {"Sharang", 1234, 8000};
+    Bank b1 = {"Raj",1234, 8000};
     display(b1);
     deposit(b1);
     withdraw(b1);
