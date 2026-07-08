@@ -13,7 +13,7 @@ int main()
     struct Employee e1 = {"Ravi", 1234, 800000};
     struct Employee e2 = {"Kishan", 1235, 8100000};
     struct Employee e3 = {"Dubey", 1236, 8200000};
-    Employee highest;   //we created a variable with data type employee only
+    Employee highest; // we created a variable with data type employee only
     if (e1.salary > e2.salary && e1.salary > e3.salary)
     {
         highest = e1;
