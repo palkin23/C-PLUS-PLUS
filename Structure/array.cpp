@@ -1,18 +1,39 @@
-#include<iostream>
+/*. Create an array of structures for 10 students and find:
+● average marks
+● highest marks
+● lowest marks */
+#include <bits\stdc++.h>
 using namespace std;
-struct array{
-    int avg_marks;
-    int highest_marks;
-    int lowest_marks;
+struct Students
+{
+    double marks;
 };
-int main(){
-    struct array a[2];
-    a[0].avg_marks=80;
-    a[0].higest_marks=100;
-    a[0].lowest_marks=60;
-    a[1].avg_marks=50;
-    a[1].higest_marks=90;
-    a[1].lowest_marks=10;
-int avg=(a[0].avg_makrs+a[1].avg_marks)/2;
+int main()
+{
+    struct Students arr[10];
+    cout << "Enter Marks of 10 students:" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cin >> arr[i].marks;
+    }
+    double sum = 0;
+    double highest_marks = INT_MIN;
+    double lowest_marks = INT_MAX;
 
+    for (int i = 0; i < 10; i++)
+    {
+        sum = sum + arr[i].marks;
+        if (highest_marks < arr[i].marks)
+        {
+            highest_marks = arr[i].marks;
+        }
+        if (lowest_marks > arr[i].marks)
+        {
+            lowest_marks = arr[i].marks;
+        }
+    }
+    cout << "Average Marks of Students are: " << sum / 10 << endl;
+    cout << "Highest Marks of Students are: " << highest_marks << endl;
+    cout << "Lowest Marks of Students are : " << lowest_marks << endl;
+    return 0;
 }
