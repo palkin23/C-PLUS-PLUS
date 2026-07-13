@@ -6,4 +6,4 @@
 5. EXIT*/
 #include<iostream>
 using namespace std;
-cout<<"WELCOME TO MY CONTACT BOOK:"<<endl;
+
