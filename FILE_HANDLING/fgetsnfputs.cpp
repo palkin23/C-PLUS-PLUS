@@ -6,7 +6,7 @@ int main()
 {
   FILE *fptr;
   char line[100];
-  fptr = fopen("file1.cpp", "w");
+  fptr = fopen("file1.txt", "w");
   cout << "give input"<<endl;
 
   for (int i = 0; i < 5; i++)
@@ -18,7 +18,7 @@ int main()
 
   fclose(fptr);
   cout << "contents of file" << endl;
-  fptr = fopen("file1.cpp", "r");
+  fptr = fopen("file1.txt", "r");
   while (fgets(line, 100, fptr))
   {
     cout << line;
