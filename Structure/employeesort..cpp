@@ -11,7 +11,7 @@
     Employee emp[3]={
         {"Raj",1000},
         {"Simran",2000},
-        {"Mohan",999}
+        {"Mohan",999}d
     };
     
 
