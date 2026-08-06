@@ -1,1 +1,1 @@
-"<<b.balance;
+ s[0].addDetails(s, n);
